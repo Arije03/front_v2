@@ -1,0 +1,32 @@
+
+<div fxLayoutAlign="center center" fxFlexFill class="main-div" [fxLayout]="'column'">
+
+    <mat-card fxFlex="38" class="card">
+        <form #form fxLayoutAlign="stretch" fxLayout="column" class="login" >
+            <H1 fxLayoutAlign="center center" class="tool" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Connexion</H1>
+            <mat-form-field >
+              <mat-label>  Nom  </mat-label>
+              <input matInput placeholder="E-mail">
+            </mat-form-field>
+
+            <mat-form-field >
+                <mat-label>  Mot de passe </mat-label>
+                <input matInput type="password" placeholder="Mot de passe">
+              </mat-form-field>
+            
+              <button mat-raised-button (click)="Login()" type="submit" style="background: radial-gradient(#e66465, #9198e5);"> Se Connecter </button>
+             
+              <a routerLink="/register" style="color: rgb(99, 97, 97);" fxLayoutAlign="center center">  Voulez-vous créer un compte? </a>
+              
+
+          </form>
+          
+          
+    </mat-card>
+    
+    <section class="example-section">
+      <mat-checkbox class="example-margin" routerLink="/parametre" >Mot de passe oublié ?</mat-checkbox>
+    </section>
+  
+</div>
+

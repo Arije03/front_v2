@@ -1,0 +1,31 @@
+<div fxLayoutAlign="center center" fxFlexFill>
+<form #Formulaire="ngForm"   [fxLayout]=" 'row' "
+
+>
+
+</form>
+
+<mat-card > 
+    <mat-card-content [fxLayout]="'column'" fxFlex=" 600px">
+        <div [fxLayout]="'column'"></div>
+        <h3 fxLayoutAlign="center center" class="h3">user profile</h3>
+        <div fxFlex="100" [fxLayout]="'row'">
+            <mat-divider></mat-divider>
+
+            <img src="http://placehold.jp/100x100.png"class="img">
+            <div fxFlex="100" [fxLayout]="'column'">
+                <p [ngStyle]="{'color': 'red' , 'font-size': '75%'}" align="start"> 
+                </p>
+               <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> Nom utilisateur</p>
+                    
+                     
+                
+                
+                  
+
+            </div>
+        </div>
+
+    </mat-card-content>
+</mat-card>
+</div>

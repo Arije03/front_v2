@@ -10,12 +10,18 @@
     background-color: rgba(0,1, 0,1, 0,1, 0,1);
     border-radius: 30px;
     opacity: 0,5;
+    width: 400px;
+    
+    
 }
 .mat-raised-button{
     border-radius: 30px;
-    
+    width: 300px;
+    left: 10%;
+    margin-top: 15px;
 }
 .tool{
     font-size: 50px;
 }
+
 

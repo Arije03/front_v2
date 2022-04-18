@@ -19,10 +19,11 @@ export class RegisterComponent implements OnInit {
     return this.email.hasError('email') ? 'Not a valid email' : '';
   }
   startDate = new Date(1990, 0, 1);
-
-  ngOnInit(): void {
-  }
   hide = true;
+  ngOnInit(): void {
+    
+  }
+  
 
 
 }

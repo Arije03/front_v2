@@ -1,3 +1,4 @@
+import { AuthService } from './auth.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -18,13 +19,15 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatMenuModule} from '@angular/material/menu';
 import { HeaderComponent } from './header/header.component';
-
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import {MatListModule} from '@angular/material/list';
 import {MatDividerModule} from '@angular/material/divider';
 import { ParametreComponent } from './parametre/parametre.component';
 import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 import {FormsModule} from '@angular/forms';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+
+
 
 
 
@@ -48,6 +51,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     RegisterComponent,
     HeaderComponent,
     ParametreComponent,
+   
+    
   ],
   imports: [
     BrowserModule,
@@ -69,9 +74,10 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatBottomSheetModule,
     FormsModule,
     MatCheckboxModule,
+    HttpClientModule
     
       ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

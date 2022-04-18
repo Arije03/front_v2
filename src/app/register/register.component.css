@@ -19,6 +19,11 @@
     border-radius: 30px;
     width: 300px;
     left: 20%;
+    background: radial-gradient(#e68181, #7176ac);
+
     
     
+}
+mat-card{
+    border-radius: 30px;
 }

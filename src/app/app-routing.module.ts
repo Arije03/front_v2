@@ -5,7 +5,6 @@ import { LoginComponent } from './login/login.component';
 import { ParametreComponent } from './parametre/parametre.component';
 import { ProfilComponent } from './profil/profil.component';
 import { RegisterComponent } from './register/register.component';
-import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 
 
 const routes: Routes = [
@@ -14,6 +13,7 @@ const routes: Routes = [
   {path: 'register' , component: RegisterComponent},
   {path: 'parametre', component: ParametreComponent},
   {path: 'header' , component: HeaderComponent},
+ 
 ];
 
 @NgModule({
